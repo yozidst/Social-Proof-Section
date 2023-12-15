@@ -86,7 +86,7 @@ ul li {
 
 
 .ratings {
-    width: 468px;
+    width: 440px;
     height: fit-content;
     background-color: var(--color-light-grayish-magenta);
     border-radius: 8px;
@@ -114,11 +114,11 @@ ul li {
 }
 
 .first-review {
-    transform: translate(-20%, 0);
+    transform: translate(-22%, 0);
 }
 
 .second-review {
-    transform: translate(-10%, 0);
+    transform: translate(-11%, 0);
 }
 
 
@@ -179,7 +179,7 @@ strong {
 }
 
 .card-a {
-    transform: translate(0, -13%);
+    transform: translate(0, -15%);
 }
 
 .card-b {
@@ -187,7 +187,7 @@ strong {
 }
 
 .card-c {
-    transform: translate(0, 3%);
+    transform: translate(0, 5%);
 }
 
 
@@ -197,16 +197,12 @@ strong {
 
 
 
-@media only screen and (max-width: 1120px) and (min-width: 375px) {
+@media only screen and (max-width: 1120px) and (min-width: 400px) {
 
 
     .container {
-        width: min(375px);
-        margin: 0;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        width: fit-content;
+        padding-top: 50px;
+        width: 100vw;
     }
 
     .top-content {
@@ -226,19 +222,43 @@ strong {
     .right-side {
         width: fit-content;
         margin: 0;
-        padding: 0;
+        padding-top: 30px;
     }
 
     h1 {
+        min-width: fit-content;
+        margin: 0;
+        padding: 0 30px;
         text-align: center;
     }
 
+    ul {
+        min-width: fit-content;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+    }
+    
     ul li {
         margin: 0;
-        padding: 0;
-        text-align: left;
+        padding: 0 2px;
+        white-space: nowrap;
+        text-align: center;
+        
     }
 
+    .top-content {
+        display: grid;
+        place-items: center;
+    }
+
+    .ratings {
+        margin-bottom: 20px;
+    }
+
+    .rated-from {
+        text-align: center;
+    }
 
     .first-review {
         transform: translate( 0, 0);
@@ -252,7 +272,16 @@ strong {
         margin: 0;
         display: grid;
         grid-template-columns: 1fr;
-        align-items: left;
+        width: 100vw;
+        gap: 0;
+        margin-bottom: 60px;
     }
 
+    .card {
+        min-width: 45vw;
+        padding-bottom: 0;
+    }
+
+
 }
+
